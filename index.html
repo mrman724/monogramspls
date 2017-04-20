@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Monograms Plus</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+	
+	.col-lg-4 {
+		text-align: center;
+	}
+	/* Special class on .container surrounding .navbar, used for positioning it into place. */
+	.navbar-wrapper {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 20;
+		
+	}
+
+/* Flip around the padding for proper display in narrow viewports */
+	.navbar-wrapper > .container {
+		padding-right: 0;
+		padding-left: 0;
+		}
+	.navbar-wrapper .navbar {
+		padding-right: 15px;
+		padding-left: 15px;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	    border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+	.navbar-wrapper .navbar .container {
+		width: auto;
+	}
+	.bannerContainer {
+		position:relative;     
+	}
+	.carousel {
+		height: 500px;
+		margin-bottom: 60px;
+	}
+	
+	.carousel .item {
+		height: 500px;
+		background-color: #777;
+	}
+	.carousel-inner > .item > img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-width: 100%;
+		height: 500px;
+	}
+	.featurette-heading {
+		font-weight: 300;
+		line-height: 1;
+		letter-spacing: -1px;
+	}
+	.featurette-divider {
+    margin: 80px 0;
+	}
+	.featurette > img {
+		width: 500xp;
+		height: 500xp;
+	}
+	.carousel-caption {
+      top: 35%;
+    bottom: auto;
+	left: 10%;
+	right: auto;
+}
+</style>
+  
+  
+  
+  
+  
+</head>
+<body>
+<div class="navbar-wrapper">
+<div class="container">
+	<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Monograms Plus</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li> 
+        <li><a href="#">Contact</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+</div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="Images\thread.jpg" alt="Chania">
+	  <div class="carousel-caption ">
+        <h3>Custom Embroidery</h3>
+        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="Images\Desert.png" alt="Chania">
+	  <div class="carousel-caption ">
+        <h3>Custom Embroidery</h3>
+        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="Images\Penguins.jpg" alt="Flower">
+	  <div class="carousel-caption ">
+        <h3>Custom Embroidery</h3>
+        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+      </div>
+    </div>
+</div>
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>	
+	
+	<div class="container">
+		<div class="row">
+		<div class="col-lg-4">           
+			<img src="Images\Varsity_Letterman_Jackets.jpg" class="img-circle" alt="Varsity Letterman Jacket" width="140" height="140">
+			<h2>Varsity Letterman Jackets</h2>
+			<p>Create a unique jacket that will display your sports and acheivemnts.</p> 
+		</div>
+		<div class="col-lg-4">           
+			<img src="Images\personal.jpg" class="img-circle" alt="Personal Monogramming" width="140" height="140">
+			<h2>Personal Monogramming</h2>
+			<p>We offer personalization for items for blankets, jackets, dog collars, and much more.</p> 
+		</div>
+		<div class="col-lg-4">           
+			<img src="Images\business.jpg" class="img-circle" alt="Business" width="140" height="140">
+			<h2>Business</h2>
+			<p>Need uniforms for your employees or want t-shirt to give during events.</p> 
+		</div>
+	</div>
+	
+	<hr class="featurette-divider">
+
+	<div class="row featurette">
+		<div class="col-md-7">
+			<h2 class="featurette-heading">Embroidery.</h2>
+			<p class="lead">The .img-circle class shapes the image to a circle (not available in IE8):</p> 
+		</div>
+		<div class="col-md-5">           
+			<img src="Images\Jellyfish.jpg" class="featurette-image img-responsive center-block" alt="Cinque Terre" width="500" height="500">
+		</div>
+	</div>
+	
+	<hr class="featurette-divider">
+
+	<div class="row featurette">
+		<div class="col-md-7 col-md-push-5">
+			<h2 class="featurette-heading">Screen Print</h2>
+			<p class="lead">The .img-circle class shapes the image to a circle (not available in IE8):</p> 
+		</div>
+		<div class="col-md-5 col-md-pull-7">           
+			<img src="Images\Jellyfish.jpg" class="featurette-image img-responsive center-block" alt="Cinque Terre" width="500" height="500">
+		</div>
+	</div>
+	
+	<hr class="featurette-divider">
+
+	<div class="row featurette">
+		<div class="col-md-7">
+			<h2 class="featurette-heading">Embroidery.</h2>
+			<p class="lead">The .img-circle class shapes the image to a circle (not available in IE8):</p> 
+		</div>
+		<div class="col-md-5">           
+			<img src="Images\Jellyfish.jpg" class="featurette-image img-responsive center-block" alt="Cinque Terre" width="500" height="500">
+		</div>
+	</div>
+	
+	<hr class="featurette-divider">
+	
+	</div>
+	<footer>
+	<p class="pull-right">
+	Back To Top
+	</p>
+	<p>
+	© 2017 Monograms Plus, LLC. · 
+	</p>
+	</footer>
+</body>
+</html>
